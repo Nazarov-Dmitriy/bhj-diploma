@@ -15,7 +15,7 @@ class AsyncForm {
   constructor(element) {
 
     try {
-      if (element) {
+      if (element !== undefined) {
         this.element = element;
         this.registerEvents();
       } else {
@@ -32,7 +32,7 @@ class AsyncForm {
    * вызывает метод submit()
    * */
   registerEvents() { 
-    document.addEventListener('submit', (e) => {
+    this.element.addEventListener('submit', (e) => {
       e.preventDefault();
       this.submit();
     });
@@ -58,7 +58,7 @@ class AsyncForm {
   }
 
   onSubmit(options) {
-    // this.options = options;
+   
   }
 
   /**

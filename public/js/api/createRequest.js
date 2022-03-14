@@ -6,19 +6,28 @@ const createRequest = (options = {}) => {
   const xhr = new XMLHttpRequest,
     formData = new FormData;
 
-  Object.keys(options.data).forEach(key => {
-    formData.append(key, options.data[key]);
-  });
-
   xhr.addEventListener('readystatechange', () => {
     if (xhr.readyState === xhr.DONE && xhr.status == 200) {
       options.callback(xhr.response.error, xhr.response);
     }
   });
 
-  options.callback();
+  if (options.method == 'POST') {
+    if (options.data !== undefined) {
+      Object.keys(options.data).forEach(key => {
+        formData.append(key, options.data[key]);
+      });
+      xhr.responseType = options.responseType;
+      xhr.open(options.method, options.url);
+      xhr.send(formData);
+    } else {
+      xhr.open(options.method, options.url);
+      xhr.send();
+    }
+  }
 
-  xhr.responseType = options.responseType;
-  xhr.open(options.method, options.url);
-  xhr.send(formData);
+  if (options.method == 'GET') {
+    xhr.open(options.method, options.url);
+    xhr.send();
+  }
 };
