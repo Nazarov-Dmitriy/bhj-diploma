@@ -35,7 +35,6 @@ class Modal {
         this.onClose(e);
       });
     });
-
   }
 
   /**
@@ -43,7 +42,7 @@ class Modal {
    * Закрывает текущее окно (Modal.close())
    * */
   onClose(e) {
-    this.element.style.display = 'none';
+    this.close();
   }
   /**
    * Открывает окно: устанавливает CSS-свойство display

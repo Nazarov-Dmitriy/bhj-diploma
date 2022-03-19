@@ -18,7 +18,15 @@ class Sidebar {
    * при нажатии на кнопку .sidebar-toggle
    * */
   static initToggleButton() {
-
+    document.querySelector('.sidebar-toggle').addEventListener('click', ()=>{
+     if(document.body.classList.contains('sidebar-open')){
+      document.body.classList.remove('sidebar-open');
+      document.body.classList.add('sidebar-collapse');
+     }else{
+      document.body.classList.add('sidebar-open');
+      document.body.classList.remove('sidebar-collapse');
+     }
+    });
 
   }
 
@@ -48,13 +56,5 @@ class Sidebar {
         }
       });
     });
-
-
-
-
-
-
-
-
   }
 }

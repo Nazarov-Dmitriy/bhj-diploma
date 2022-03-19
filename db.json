@@ -7,182 +7,89 @@
       "id": "1"
     },
     {
-      "name": "Дмитрий Назаров",
-      "email": "difat115@gmail.com",
-      "password": "dsadsads",
-      "id": "66zs2e6p4l0qytcy8"
+      "name": "Василий Первый",
+      "email": "vas@mail.ru",
+      "password": "1234",
+      "id": "66zs2e7ckl0y358i7"
     },
     {
-      "name": "Дмитрий Назаров",
-      "email": "difat115@gmail.comdd",
-      "password": "dsasda",
-      "id": "66zs2e4pgl0qyu6y0"
-    },
-    {
-      "name": "Дмитрий Назаров",
-      "email": "difat115@gmail.comdsa",
-      "password": "dsadsads",
-      "id": "66zs2e6qwl0qyzzuf"
-    },
-    {
-      "name": "Дмитрий Назаров",
-      "email": "difat115@gmail.com11",
-      "password": "dsadsad",
-      "id": "66zs2e564l0qzaux8"
+      "name": "dsa",
+      "email": "dsa@mail.ru",
+      "password": "1234",
+      "id": "66zs2e70ol0y39k7r"
     }
   ],
   "accounts": [
     {
       "name": "Банк",
-      "user_id": "1",
-      "id": "1"
+      "user_id": "66zs2e7ckl0y358i7",
+      "id": "66zs2e77ol0y37kp1"
     },
     {
-      "name": "Магазин",
-      "user_id": "1",
-      "id": "2"
+      "name": "dddddddd",
+      "user_id": "66zs2e70ol0y39k7r",
+      "id": "66zs2e34ol0y3a8yy"
     },
     {
-      "name": "Бизнес",
+      "name": "Продукты",
       "user_id": "1",
-      "id": "3"
+      "id": "66zs2e6w0l0y3b2la"
     }
   ],
   "transactions": [
     {
-      "account_id": "1",
-      "created_at": "2019-09-15 10:24:02",
-      "id": "1",
-      "name": "Кредит",
+      "id": "66zs2e5ocl0xwl48l",
+      "type": "income",
+      "name": "Дмитрий Назаров",
+      "sum": 3213,
+      "account_id": "2",
+      "user_id": "1",
+      "created_at": "2022-03-19T13:46:02.804Z"
+    },
+    {
+      "id": "66zs2e8o8l0y37wmn",
+      "type": "income",
+      "name": "Ипотека",
       "sum": 5000,
+      "account_id": "66zs2e77ol0y37kp1",
+      "user_id": "66zs2e7ckl0y358i7",
+      "created_at": "2022-03-19T16:51:43.726Z"
+    },
+    {
+      "id": "66zs2e83ol0y38ipf",
+      "type": "income",
+      "name": "проценты",
+      "sum": 500,
+      "account_id": "66zs2e77ol0y37kp1",
+      "user_id": "66zs2e7ckl0y358i7",
+      "created_at": "2022-03-19T16:52:12.338Z"
+    },
+    {
+      "id": "66zs2e2s0l0y38quw",
       "type": "expense",
-      "user_id": "1"
+      "name": "Проценты",
+      "sum": 800,
+      "account_id": "66zs2e77ol0y37kp1",
+      "user_id": "66zs2e7ckl0y358i7",
+      "created_at": "2022-03-19T16:52:22.903Z"
     },
     {
-      "account_id": "1",
-      "created_at": "2019-09-17 15:53:02",
-      "id": "2",
-      "name": "Баланс на дебетовке",
-      "sum": 3200,
-      "type": "income",
-      "user_id": "1"
+      "id": "66zs2e7aol0y3abgj",
+      "type": "expense",
+      "name": "123132",
+      "sum": 32131,
+      "account_id": "66zs2e34ol0y3a8yy",
+      "user_id": "66zs2e70ol0y39k7r",
+      "created_at": "2022-03-19T16:53:36.258Z"
     },
     {
-      "account_id": "1",
-      "created_at": "2019-09-19 20:12:02",
-      "id": "3",
-      "name": "Копилка",
-      "sum": 1500,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-26 16:23:02",
-      "id": "4",
-      "name": "Молочные продукты",
-      "sum": 100,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-25 15:03:02",
-      "id": "5",
-      "name": "Фрукты",
-      "sum": 250,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-25 15:03:02",
-      "id": "17",
-      "name": "Овощи",
-      "sum": 300,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-26 14:47:02",
-      "id": "6",
+      "id": "66zs2e4ngl0y3bain",
+      "type": "expense",
       "name": "Мясо",
-      "sum": 600,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "2",
-      "created_at": "2019-09-27 13:27:02",
-      "id": "7",
-      "name": "Долг в банк",
-      "sum": 5000,
-      "type": "expense",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2017-10-15 13:27:02",
-      "id": "9",
-      "name": "На банду",
-      "sum": 15000,
-      "type": "expense",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2017-09-17 13:27:02",
-      "id": "10",
-      "name": "На стволы",
-      "sum": 6000,
-      "type": "expense",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2017-12-27 13:27:02",
-      "id": "11",
-      "name": "Прибыль с банка",
-      "sum": 1500000,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2018-01-15 13:27:02",
-      "id": "12",
-      "name": "Прибыль с магазина",
-      "sum": 300000,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2018-01-15 13:27:02",
-      "id": "13",
-      "name": "Подарок сизого",
-      "sum": 20000,
-      "type": "income",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2017-09-15 13:27:02",
-      "id": "14",
-      "name": "На охрану",
-      "sum": 60000,
-      "type": "expense",
-      "user_id": "1"
-    },
-    {
-      "account_id": "3",
-      "created_at": "2017-10-15 13:27:02",
-      "id": "15",
-      "name": "На бумер",
-      "sum": 300000,
-      "type": "expense",
-      "user_id": "1"
+      "sum": 500,
+      "account_id": "66zs2e6w0l0y3b2la",
+      "user_id": "1",
+      "created_at": "2022-03-19T16:54:21.694Z"
     }
   ]
 }

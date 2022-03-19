@@ -31,7 +31,7 @@ class AsyncForm {
    * Необходимо запретить отправку формы и в момент отправки
    * вызывает метод submit()
    * */
-  registerEvents() { 
+  registerEvents() {
     this.element.addEventListener('submit', (e) => {
       e.preventDefault();
       this.submit();
@@ -49,16 +49,14 @@ class AsyncForm {
     const formData = new FormData(this.element),
       entries = formData.entries(),
       form = {};
-
     for (let item of entries) {
       form[item[0]] = item[1];
     }
-
     return form;
   }
 
   onSubmit(options) {
-   
+
   }
 
   /**
@@ -66,6 +64,6 @@ class AsyncForm {
    * данные, полученные из метода getData()
    * */
   submit() {
-      this.onSubmit(this.getData());
+    this.onSubmit(this.getData());
   }
 }
